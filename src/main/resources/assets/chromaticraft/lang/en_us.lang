@@ -1,3 +1,17 @@
 # ----- BLOCKS -----
-tile.chromaticraft:block_copper.name=Copper Block
-tile.chromaticraft:block_rune.name=Rune Block
+tile.chromaticraft.rockwool.black.name=Black Rockwool
+tile.chromaticraft.rockwool.blue.name=Blue Rockwool
+tile.chromaticraft.rockwool.brown.name=Brown Rockwool
+tile.chromaticraft.rockwool.cyan.name=Cyan Rockwool
+tile.chromaticraft.rockwool.gray.name=Gray Rockwool
+tile.chromaticraft.rockwool.green.name=Green Rockwool
+tile.chromaticraft.rockwool.light_blue.name=Light Blue Rockwool
+tile.chromaticraft.rockwool.lime.name=Lime Rockwool
+tile.chromaticraft.rockwool.magenta.name=Magenta Rockwool
+tile.chromaticraft.rockwool.orange.name=Orange Rockwool
+tile.chromaticraft.rockwool.pink.name=Pink Rockwool
+tile.chromaticraft.rockwool.purple.name=Purple Rockwool
+tile.chromaticraft.rockwool.red.name=Red Rockwool
+tile.chromaticraft.rockwool.silver.name=Light Gray Rockwool
+tile.chromaticraft.rockwool.white.name=White Rockwool
+tile.chromaticraft.rockwool.yellow.name=Yellow Rockwool

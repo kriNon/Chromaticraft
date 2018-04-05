@@ -49,7 +49,7 @@ public class Chromaticraft
     }
 }
 
-//TODO: Setup Assets for Runes
+//TODO: Fix rockwool block item not rendering properly in inventory
 //TODO: Rename Rockwool to Runes
 
 
