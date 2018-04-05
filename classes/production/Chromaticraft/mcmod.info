@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chromaticraft",
+  "name": "Chromaticraft",
+  "description": "Original Source Code: github.com/ReikaKalseki/ChromatiCraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ReikaKalseki", "kriNon"],
+  "credits": "Thanks ReikaKalseki for creating Chromaticraft",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

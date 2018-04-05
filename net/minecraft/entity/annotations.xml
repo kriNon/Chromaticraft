@@ -1,0 +1,5 @@
+<root>
+    <item name='net.minecraft.entity.Entity invulnerable'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
