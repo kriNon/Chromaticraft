@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import kriNon.mods.Chromaticraft.init.TFBlocks;
 
@@ -18,17 +19,21 @@ public class Chromaticraft
 
     @Mod.Instance
     private static Chromaticraft instance;
-    private static Logger logger;
 
     @SidedProxy(clientSide = "kriNon.mods.Chromaticraft.proxy.ClientProxy",serverSide = "kriNon.mods.Chromaticraft.proxy.ServerProxy")
     public static ServerProxy proxy;
 
+    public static final Logger LOG = LogManager.getLogger(MODID);
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        logger = event.getModLog();
+
+
         proxy.preInit(event);
+
         TFBlocks.preInit();
+
     }
 
     @Mod.EventHandler

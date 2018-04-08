@@ -2,6 +2,7 @@ package kriNon.mods.Chromaticraft.init;
 
 import cofh.core.util.core.IInitializer;
 import kriNon.mods.Chromaticraft.blocks.*;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -41,6 +42,8 @@ public class TFBlocks {
             init.initialize();
         }
         MinecraftForge.EVENT_BUS.register(INSTANCE);
+
+
     }
 
     /* EVENT HANDLING */

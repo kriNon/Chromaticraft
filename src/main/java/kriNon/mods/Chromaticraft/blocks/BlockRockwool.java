@@ -1,9 +1,9 @@
 package kriNon.mods.Chromaticraft.blocks;
 
-import kriNon.mods.Chromaticraft.Chromaticraft;
 import cofh.core.block.BlockCore;
 import cofh.core.render.IModelRegister;
 import cofh.core.util.core.IInitializer;
+import kriNon.mods.Chromaticraft.Chromaticraft;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
@@ -11,6 +11,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
@@ -23,7 +24,6 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import static cofh.core.util.helpers.RecipeHelper.addShapelessRecipe;
 import static cofh.core.util.helpers.RecipeHelper.addSmelting;
-import static net.minecraft.creativetab.CreativeTabs.DECORATIONS;
 
 public class BlockRockwool extends BlockCore implements IInitializer, IModelRegister {
 
@@ -34,7 +34,7 @@ public class BlockRockwool extends BlockCore implements IInitializer, IModelRegi
         super(Material.ROCK, "chromaticraft");
 
         setUnlocalizedName("rockwool");
-        setCreativeTab(DECORATIONS);
+        setCreativeTab(CreativeTabs.DECORATIONS);
 
         setHardness(0.8F);
         setResistance(10.0F);
@@ -81,7 +81,6 @@ public class BlockRockwool extends BlockCore implements IInitializer, IModelRegi
     @Override
     @SideOnly (Side.CLIENT)
     public void registerModels() {
-
         for (int i = 0; i < Type.values().length; i++) {
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), i, new ModelResourceLocation(modName + ":" + name, "type=" + Type.byMetadata(i).getName()));
         }
@@ -125,6 +124,11 @@ public class BlockRockwool extends BlockCore implements IInitializer, IModelRegi
     @Override
     public boolean register() {
 
+        //addSmelting(ItemMaterial.crystalSlag, rockwoolSilver, 0.1F);
+
+        //for (int i = 0; i < 16; i++) {
+        //    addShapelessRecipe(new ItemStack(this, 1, i), new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Items.DYE, 1, i));
+        //}
         return true;
     }
 

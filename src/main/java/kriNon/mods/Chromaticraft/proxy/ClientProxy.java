@@ -2,7 +2,6 @@ package kriNon.mods.Chromaticraft.proxy;
 
 import cofh.core.proxy.EventHandlerClient;
 import cofh.core.render.IModelRegister;
-import cofh.core.render.entity.RenderEntityAsIcon;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -41,7 +40,8 @@ public class ClientProxy extends ServerProxy {
 
     /* REGISTRATION */
     public void registerRenderInformation() {
-        }
+
+    }
 
     /* HELPERS */
     public boolean addIModelRegister(IModelRegister modelRegister) {
