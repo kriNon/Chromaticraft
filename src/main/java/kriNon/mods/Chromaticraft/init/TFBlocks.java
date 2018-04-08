@@ -43,7 +43,7 @@ public class TFBlocks {
         }
         MinecraftForge.EVENT_BUS.register(INSTANCE);
 
-
+        blockRockwool.registerModels();
     }
 
     /* EVENT HANDLING */
